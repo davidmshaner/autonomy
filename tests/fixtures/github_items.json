@@ -1,0 +1,16 @@
+[
+  {"fieldValueByName": {"name": "Done"},
+   "content": {"__typename": "PullRequest", "title": "Merged PR card", "number": 10,
+               "merged": true, "mergedAt": "2026-06-09T15:00:00Z",
+               "mergedBy": {"login": "me"}, "closedAt": "2026-06-09T15:00:00Z"}},
+  {"fieldValueByName": {"name": "Done"},
+   "content": {"__typename": "Issue", "title": "Closed issue card", "number": 11,
+               "closed": true, "closedAt": "2026-06-10T16:00:00Z",
+               "timelineItems": {"nodes": [{"createdAt": "2026-06-10T16:00:00Z",
+                                            "actor": {"login": "someone"}}]}}},
+  {"fieldValueByName": {"name": "In Progress"},
+   "content": {"__typename": "Issue", "title": "Not done", "number": 12,
+               "closed": false, "closedAt": null,
+               "timelineItems": {"nodes": []}}},
+  {"fieldValueByName": null, "content": null}
+]
