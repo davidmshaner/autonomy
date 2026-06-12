@@ -328,6 +328,7 @@ Expected: PASS (3 passed)
 
 ```python
 # append to tests/test_sessions.py
+from zoneinfo import ZoneInfo
 from sessions import session_in_scope, aggregate_sessions
 from datetime import datetime, timezone
 
@@ -349,7 +350,8 @@ def test_aggregate_sessions_buckets_by_week(tmp_path):
         since=since, until=until, spec_min_chars=160,
     )
     wk = agg["2026-06-08"]
-    assert wk["human"] == 1 and wk["spec"] == 1 and wk["actions"] == 2
+    # spec turns are a subset of human turns, so the 1 spec + 1 short turn -> human == 2
+    assert wk["human"] == 2 and wk["spec"] == 1 and wk["actions"] == 2
 ```
 
 - [ ] **Step 7: Run test to verify it fails**
