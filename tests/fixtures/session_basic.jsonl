@@ -1,0 +1,9 @@
+{"type":"user","cwd":"/Users/me/dev/proj","timestamp":"2026-06-09T14:00:00Z","message":{"role":"user","content":"Refactor the auth module to use the new token store, keep the existing public interface, and add a regression test for the expiry path so we do not lose the fix we just landed."}}
+{"type":"user","cwd":"/Users/me/dev/proj","timestamp":"2026-06-09T14:05:00Z","message":{"role":"user","content":"go ahead"}}
+{"type":"user","cwd":"/Users/me/dev/proj","timestamp":"2026-06-09T14:06:00Z","message":{"role":"user","content":[{"type":"tool_result","tool_use_id":"x","content":"ok"}]}}
+{"type":"user","cwd":"/Users/me/dev/proj","timestamp":"2026-06-09T14:07:00Z","isMeta":true,"message":{"role":"user","content":"meta caveat text"}}
+{"type":"user","cwd":"/Users/me/dev/proj","timestamp":"2026-06-09T14:08:00Z","isSidechain":true,"message":{"role":"user","content":"subagent prompt"}}
+{"type":"user","cwd":"/Users/me/dev/proj","timestamp":"2026-06-09T14:09:00Z","message":{"role":"user","content":"<command-name>/deploy</command-name>"}}
+{"type":"user","cwd":"/Users/me/dev/proj","timestamp":"2026-06-09T14:10:00Z","message":{"role":"user","content":"<local-command-stdout>done</local-command-stdout>"}}
+{"type":"user","cwd":"/Users/me/dev/proj","timestamp":"2026-06-09T14:11:00Z","message":{"role":"user","content":"<system-reminder>background note</system-reminder>"}}
+{"type":"assistant","cwd":"/Users/me/dev/proj","timestamp":"2026-06-09T14:12:00Z","message":{"role":"assistant","content":[{"type":"text","text":"working"},{"type":"tool_use","id":"a","name":"Bash","input":{}},{"type":"tool_use","id":"b","name":"Read","input":{}}]}}
