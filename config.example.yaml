@@ -1,0 +1,28 @@
+# autonomy config. Copy to config.yaml (gitignored) and edit. Relative paths
+# resolve against $HOME; ~ expands.
+timezone: America/New_York
+week_start: monday
+
+# Where Claude Code session JSONL lives (yours may differ).
+projects_dirs:
+  - .claude/projects
+# cowork_root: Library/Application Support/Claude/local-agent-mode-sessions   # optional
+
+# Sessions whose working dir is under one of these roots count toward this
+# project's cards (repo-scoped UPPER BOUND — see README).
+scope:
+  repo_roots:
+    - ~/dev/your-project
+
+tracker:
+  type: github_projects            # github_projects | linear
+  token_env: AUTONOMY_TRACKER_TOKEN # name of the env var holding your API token
+  # --- github_projects ---
+  project_node_id: PVT_xxxxxxxx     # GraphQL node id of your ProjectV2 board
+  done_status: [Done]               # Status field option(s) that mean "complete"
+  me: your-github-login             # optional; omit to count all cards
+  # --- linear (set type: linear and use these instead) ---
+  # team_id: TEAM_xxxxxxxx
+  # me: you@example.com
+
+spec_turn_min_chars: 160            # human turns >= this length count as "spec turns"
